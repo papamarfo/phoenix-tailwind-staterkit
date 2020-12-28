@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Phoenix Tailwind Starterkit</title>
+      <link rel="icon" type="image/png" href=""/>
+      <!-- scripts -->
+      <script defer type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
+      <!-- styles -->
+      <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+   </head>
+   <body>
+      <div class="mx-auto">
+         <%= @inner_content %>
+      </div>
+   </body>
+</html>
